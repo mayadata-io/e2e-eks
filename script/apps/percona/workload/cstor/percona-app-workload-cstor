@@ -92,7 +92,6 @@ sed -i '0,/command:/s|        command:| \
             value: '"$AWS_SECRET_ACCESS_KEY"' \
 \n&|' run_cstor_litmus_test.yml
 
-
 #################
 ## RUNNER MAIN ##
 #################
