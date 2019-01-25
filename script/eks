@@ -3,7 +3,7 @@ set -e
 
 path=$(pwd)
 #git clone https://github.com/openebs/litmus.git
-https://github.com/nsathyaseelan/litmus.git
+git clone https://github.com/nsathyaseelan/litmus.git
 cd litmus/k8s/eks/k8s-installer/
 git checkout eks-cleanup
 
