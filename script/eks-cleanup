@@ -8,7 +8,9 @@ mkdir ~/logs
 cp $path/.kube/clusters ~/logs
 cp $path/.kube/region ~/logs
 
-git clone https://github.com/openebs/litmus.git
+#git clone https://github.com/openebs/litmus.git
+git clone https://github.com/nsathyaseelan/litmus.git
+git checkout di-fix
 cd litmus/k8s/eks/k8s-installer/
 
 echo "cleanup"
