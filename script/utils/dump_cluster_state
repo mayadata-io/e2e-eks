@@ -6,3 +6,4 @@ kubectl get pods --all-namespaces -o wide
 kubectl get pvc --all-namespaces
 kubectl get sc
 kubectl get nodes
+kubectl top nodes
