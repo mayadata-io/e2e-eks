@@ -11,6 +11,10 @@ derive_cluster_details_infra()
  cp  $path/.kube/config ~/.kube/config
  cat $path/.kube/clusters > $path/.kube-openebs/clusters
  cat $path/.kube/region > $path/.kube-openebs/region
+ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v1.10.1/src/deploy/recommended/kubernetes-dashboard.yaml
+ kubectl apply -f https://raw.githubusercontent.com/kubernetes/heapster/master/deploy/kube-config/influxdb/heapster.yaml
+ kubectl apply -f https://raw.githubusercontent.com/kubernetes/heapster/master/deploy/kube-config/influxdb/influxdb.yaml
+ kubectl apply -f https://raw.githubusercontent.com/kubernetes/heapster/master/deploy/kube-config/rbac/heapster-rbac.yaml
 }
  
 setup_cluster_config_test()
